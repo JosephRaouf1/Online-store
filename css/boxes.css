@@ -1,0 +1,105 @@
+body{
+    font-family: "DM Sans", sans-serif;
+}
+
+.boxes{
+    padding-top: 10px;
+    width: 80%;
+    margin: auto;
+}
+.boxes .boxes_container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 8px;
+}
+.boxes_container .box{
+    padding: 0 10px;
+    background: url(img/bg_banner3.jpg);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    height: 130px;
+    flex: 1;
+    min-width: 242px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+.box::before{
+    content: "";
+    position: absolute;
+    width: 280px;
+    height: 180px;
+    background: #eb00a5;
+    border-radius: 50%;
+    top: 0%;
+    left: 0%;
+    transform: translate(-70%, -12%);
+    z-index: 1;
+}
+.boxes_container .box img{
+    width: 100px;
+    transition: 0.3s;
+    z-index: 2;
+}
+.boxes_container .box:hover img{
+    scale: 1.09;
+}
+.boxes_container .box .text_box{
+    align-self: flex-start;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.boxes_container .box .text_box .flash{
+    color: var(--main_color);
+    font-size: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.boxes_container .box .text_box h6{
+    font-size: 12px;
+    line-height: 11px;
+    padding-bottom: 5px;
+    position: relative;
+}
+.boxes_container .box .text_box h6::after{
+    content: "";
+    position: absolute;
+    height: 1px;
+    width: 40%;
+    left: 0;
+    bottom: 0;
+    background-color: var(--main_color);
+}
+.boxes_container .box .text_box .discount{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding-top: 5px;
+}
+.boxes_container .box .text_box .discount span{
+    font-size: 16px;
+    color: var(--p_color);
+}
+.boxes_container .box .text_box .discount span:nth-child(2){
+    font-size: 25px;
+    font-weight: 600;
+    color: var(--main_color);
+}
+.boxes_container .box .text_box .now{
+    text-transform: capitalize;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-weight: 600;
+    font-size: 12px;
+    background-color: #eb00a4;
+    padding: 5px 10px;
+    border-radius: 15px;
+    color: var(--white_color);
+}

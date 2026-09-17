@@ -1,0 +1,278 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: "DM Sans", sans-serif;
+}
+
+:root{
+    --main_color: #eb00a4;
+    --p_color: #7b7b7b;
+    --bg_color: #f3f3f3;
+    --white_color: #fff;
+    --color_heading: #121416;
+    --border_color: #e5e5e5d5;
+    --border_colore: #cececed5;
+    --sale_color: #e51a1a;
+}
+.hide{
+    display: none;
+}
+
+/*--------------------------------------------------------------------------header------------------------------------------------------------*/
+header{
+    box-shadow: 0 0 5px #7b7b7b;
+    position: fixed;
+    z-index: 10000;
+    width: 100%;
+    background-color: #fff;
+}
+.header_container{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    flex-wrap: wrap;
+    padding: 10px 0px;
+    z-index: 10;
+}
+
+/*--------------------------------------------------------------------------logo------------------------------------------------------------- */
+.logo{
+    letter-spacing: 2px;
+    flex: 0.3;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.logo i{
+    color: var(--main_color);
+    font-size: 32px;
+    transform: translateY(-3px);
+}
+.logo h1{
+    font-family: "Saira Stencil";
+}
+.logo span{
+    color: var(--main_color);
+    font-family: "Saira Stencil";
+}
+
+/*--------------------------------------------------------------------------head tabs---------------------------------------------------------*/
+.header_container .head_tabs{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    flex: 1;
+    flex-wrap: wrap;
+    position: relative;
+    height: 50px;
+}
+
+/* ------------- links --------------- */
+
+.head_tabs .head_links_container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+}
+.head_tabs .head_links{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.head_tabs .head_links li a{
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 2.5px 10px;
+    color: var(--color_heading);
+    transition: 0.3s;
+}
+.head_tabs .head_links li:first-child a{
+    color: var(--main_color);
+}
+
+/* --------------- icons --------------- */
+
+.head_tabs .head_icons{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 5px;
+    flex: 0.3;
+}
+.head_tabs .head_icons i{
+    color: var(--color_heading);
+    font-size: 22px;
+    cursor: pointer;
+}
+.head_tabs .head_icons i:hover{
+    color: var(--main_color);
+    scale: 1.1;
+}
+.head_tabs .head_icons .fav_icon,
+.head_tabs .head_icons .cart_icon{
+    position: relative;
+}
+.head_tabs .head_icons .fav_icon button,
+.head_tabs .head_icons .cart_icon button{
+    outline: none;
+    border: none;
+    background-color: transparent;
+}
+.head_tabs .head_icons .fav_icon span,
+.head_tabs .head_icons .cart_icon span{
+    position: absolute;
+    background-color: var(--sale_color);
+    color: var(--white_color);
+    border-radius: 50%;
+    font-size: 12px;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    top: -10px;
+    right: -10px;
+}
+#menu_icon{
+    rotate: 180deg;
+}
+
+/* ------------------ search box -------------------- */
+
+.search_box{
+    position: absolute;
+    bottom: -50px;
+    right: -30px;
+    display: flex;
+    align-items: center;
+    height: 30px;
+    background-color: var(--white_color);
+    border: 1px solid var(--p_color);
+    transition: 0.3s;
+}
+.search_box .select_box{
+    padding-right: 5px;
+    position: relative;
+}
+.search_box .select_box::after{
+    content: '';
+    position: absolute;
+    height: 60%;
+    width: 1px;
+    background-color: var(--p_color);
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+}
+.search_box .select_box #Categoty{
+    height: 30px;
+    padding-right: 5px;
+    outline: none;
+    border: none;
+    color: var(--p_color);
+}
+.search_box input{
+    height: 30px;
+    width: 300px;
+    outline: none;
+    border: none;
+    padding-left: 5px;
+    color: var(--color_heading);
+}
+.search_box button{
+    height: 30px;
+    width: 30px;
+    color: var(--white_color);
+    background-color: var(--main_color);
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+.search_opacity{
+    opacity: 0;
+    transform: translateX(130%);
+}
+
+header .head_links_container.show{
+    display: block;
+}
+
+
+/* -------------------------------------------- */
+
+@media screen and (max-width: 1170px){
+    .header_container{
+        flex-direction: column;
+    }
+    .head_tabs{
+        width: 100%;
+    }
+    .head_links_container.hide{
+        display: none;
+    }
+    .container .header_container .head_tabs .head_links_container{
+        position: absolute;
+        top: 34px;
+        left: 0px;
+        background-color: var(--white_color);
+        padding: 40px 0 20px 0;
+        width: 100%;
+        align-items: self-start;
+        border: 1px solid rgb(223, 223, 223);
+    }
+    .head_tabs .head_links_container .menu_header{
+        position: absolute;
+        top: 10px;
+        left: 10%;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+    }
+    .head_tabs .head_links_container .menu_header i{
+        font-size: 20px;
+        color: var(--main_color);
+    }
+    .head_tabs .head_links_container .menu_header h6{
+        text-transform: capitalize;
+        font-size: 18px;
+        color: var(--main_color);
+    }
+    .head_tabs .head_links{
+        flex-direction: column;
+        width: 100%;
+    }
+    .head_tabs .head_links li{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: 0.3s;
+    }
+    .head_tabs .head_links li a{
+        width: 100%;
+        text-align: center;
+        padding: 10px 0;
+    }
+    .head_tabs .head_links li:first-child a{
+        color: var(--color_heading);
+    }
+    .head_tabs .head_links li:hover{
+        background-color: var(--border_colore);
+    }
+    .head_tabs .head_links li a:hover{
+        scale: 1.1;
+    }
+    .head_tabs .head_icons{
+        flex: 1;
+    }
+    .head_tabs .head_icons .menu_box_icon{
+        display: block;
+    }
+}

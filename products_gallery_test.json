@@ -1,0 +1,334 @@
+[
+  {
+    "id": 0,
+    "img": "img/product/0.avif",
+    "name": "55 Inch Crystal UHD U8000F 4K Samsung Vision AI Smart TV (2025)",
+    "price": 350,
+    "catetory": "electronics",
+    "images": [
+      "img/product/0.avif",
+      "img/product/0-1.avif",
+      "img/product/0-2.avif",
+      "img/product/0-3.avif"
+    ]
+  },
+  {
+    "id": 1,
+    "img": "img/product/1.webp",
+    "name": "Xiaomi Redmi 13C (6GB RAM), Camera 50 MP, Screen Size 6.74 inches (17.12 cm), Battery 5000 mAh, Internal Storage 128 GB, ",
+    "price": 280,
+    "catetory": "mobiles",
+    "images": [
+      "img/product/1.webp",
+      "img/product/1-1.webp",
+      "img/product/1-2.webp",
+      "img/product/1-3.webp"
+    ]
+  },
+  {
+    "id": 2,
+    "img": "img/product/2.avif",
+    "name": "Latitude 5530 Laptop Intel® Core™ i5-1145G7, 8GB SSD, NVIDIA® MX550, 2GB GDDR6, M.2 2230, 512 GB, PCIe NVMe Gen3 x4, SSD, Class 35",
+    "price": 400,
+    "catetory": "electronics",
+    "images": [
+      "img/product/2.avif",
+      "img/product/2-1.avif",
+      "img/product/2-2.avif",
+      "img/product/2-3.avif"
+    ]
+  },
+  {
+    "id": 3,
+    "img": "img/product/3.jpg",
+    "name": "Canon EOS R100 Mirrorless Camera RF-S18-45mm F4.5-6.3 is STM Lens Kit, 24.1 Megapixel CMOS (APS-C) Sensor, 4K Video, RF Mount, Black",
+    "price": 530,
+    "catetory": "electronics",
+    "images": [
+      "img/product/3.jpg",
+      "img/product/3-1.jpg",
+      "img/product/3-2.jpg",
+      "img/product/3-3.jpg"
+    ]
+  },
+  {
+    "id": 4,
+    "img": "img/product/4.jpg",
+    "name": "Oppo A18 , 128 GB , 4 GB , 4G , Dual-SIM - Glowing Black",
+    "price": 250,
+    "catetory": "mobiles",
+    "images": [
+      "img/product/4.jpg",
+      "img/product/4-1.jpg",
+      "img/product/4-2.jpg",
+      "img/product/4-3.jpg"
+    ]
+  },
+  {
+    "id": 5,
+    "img": "img/product/5.avif",
+    "name": "Odyssey G5 G5 QHD G55C 27 Inch 165Hz Curved Gaming Monitor",
+    "price": 280,
+    "catetory": "electronics",
+    "images": [
+      "img/product/5.avif",
+      "img/product/5-1.avif",
+      "img/product/5-2.avif",
+      "img/product/5-3.avif"
+    ]
+  },
+  {
+    "id": 6,
+    "img": "img/product/6.webp",
+    "name": "Infinix Smart 8 (Most Stylish Smartphone, featuring a 50MP Dual Camera Setup, 4GB RAM, 64GB Storage)",
+    "price": 220,
+    "old_price": 300,
+    "catetory": "mobiles",
+    "images": [
+      "img/product/6.webp",
+      "img/product/6-1.webp",
+      "img/product/6-2.webp",
+      "img/product/6-3.webp"
+    ]
+  },
+  {
+    "id": 7,
+    "img": "img/product/7.webp",
+    "name": "Victus by HP Gaming Laptop 15t-fa200, Intel® Core™ 5 210H, 8 GB DDR5, 512 GB PCIe® NVMe™ M.2 SSD, 15.6 diagonal, FHD (1920 x 1080), 144 Hz, IPS",
+    "price": 370,
+    "catetory": "electronics",
+    "images": [
+      "img/product/7.webp",
+      "img/product/7-1.webp",
+      "img/product/7-2.webp",
+      "img/product/7-3.webp"
+    ]
+  },
+  {
+    "id": 8,
+    "img": "img/product/8.jpeg",
+    "name": "Xiaomi Redmi Note 14 Pro, 256GB, 8GB RAM, 4G LTE, Dual SIM - Midnight Black",
+    "price": 320,
+    "catetory": "mobiles",
+    "images": [
+      "img/product/8.jpeg",
+      "img/product/8-1.jpeg",
+      "img/product/8-2.jpeg",
+      "img/product/8-3.jpeg"
+    ]
+  },
+  {
+    "id": 9,
+    "img": "img/product/9.jpg",
+    "name": "NETUM Mini Barcode Scanner Bluetooth Compatible, Portable Bar Code Reader",
+    "price": 80,
+    "old_price": 100,
+    "catetory": "electronics",
+    "images": [
+      "img/product/9.jpg",
+      "img/product/9-1.jpg",
+      "img/product/9-2.jpg",
+      "img/product/9-3.jpg"
+    ]
+  },
+  {
+    "id": 10,
+    "img": "img/product/10.jpg",
+    "name": "WEMI Mini Portable Projector Mini Projecteur Portatif with WiFi 6 and Bluetooth 5.4 for Bedroom Smart Movie for iPhone Cell Phone Android OptiBarrel 500",
+    "price": 300,
+    "catetory": "electronics",
+    "images": [
+      "img/product/10.jpg",
+      "img/product/10-1.jpg",
+      "img/product/10-2.jpg",
+      "img/product/10-3.jpg"
+    ]
+  },
+  {
+    "id": 11,
+    "img": "img/product/11.jpg",
+    "name": "Apple iPhone 17 Pro Max (256 GB) - Cosmic Orange with Face ID | Tax Paid | 2 Years Official Warranty",
+    "price": 260,
+    "old_price": 300,
+    "catetory": "mobiles",
+    "images": [
+      "img/product/11.jpg",
+      "img/product/11-1.jpg",
+      "img/product/11-2.jpg",
+      "img/product/11-3.jpg"
+    ]
+  },
+  {
+    "id": 12,
+    "img": "img/product/12.png",
+    "name": "HP Color LaserJet Pro MFP 3303sdw (499M6A), Cycle (monthly, letterhead): Up to 40,000 pages, Printing Technique: Laser",
+    "price": 370,
+    "catetory": "electronics",
+    "images": [
+      "img/product/12.png",
+      "img/product/12-1.png",
+      "img/product/12-2.png",
+      "img/product/12-3.png"
+    ]
+  },
+  {
+    "id": 13,
+    "img": "img/product/13.jpg",
+    "name": "X1 Smart 3D Rice Cooker HD4515/67",
+    "price": 490,
+    "catetory": "appliances",
+    "images": [
+      "img/product/13.jpg",
+      "img/product/13-1.jpg",
+      "img/product/13-2.jpg",
+      "img/product/13-3.jpg"
+    ]
+  },
+  {
+    "id": 14,
+    "img": "img/product/14.jpg",
+    "name": "ProfiCook® Toaster, 2 Slice Toaster, Stainless Steel Housing, 850 Watt, Wide Slot, Bun Attachment (Removable), 7 Adjustable Browning Levels, Crumb Drawer",
+    "price": 340,
+    "catetory": "appliances",
+    "images": [
+      "img/product/14.jpg",
+      "img/product/14-1.jpg",
+      "img/product/14-2.jpg",
+      "img/product/14-3.jpg"
+    ]
+  },
+  {
+    "id": 15,
+    "img": "img/product/15.jpg",
+    "name": "HONOR 400 Lite 5G Smartphone, 6.7 120Hz Display, 8GB RAM+256GB Storage, IP65 Water-Resistant, MagicOS 9.0 (Android 15), Mars Green | 1 year Warranty",
+    "price": 240,
+    "old_price": 300,
+    "catetory": "mobiles",
+    "images": [
+      "img/product/15.jpg",
+      "img/product/15-1.jpg",
+      "img/product/15-2.jpg",
+      "img/product/15-3.jpg"
+    ]
+  },
+  {
+    "id": 16,
+    "img": "img/product/16.jpg",
+    "name": "Amazplus-Portable-Ac-Mini-Cooler-Fan-For-Room-Cooling-Rechargeable-Fan-Portable-Ac-For-Home-Portable-Air-Conditioners-Water-Cooler-Mini-Ac-For-Room-Cooling",
+    "price": 600,
+    "old_price": 700,
+    "catetory": "appliances",
+    "images": [
+      "img/product/16.jpg",
+      "img/product/16-1.jpg",
+      "img/product/16-2.jpg",
+      "img/product/16-3.jpg"
+    ]
+  },
+  {
+    "id": 17,
+    "img": "img/product/17.jpg",
+    "name": "IMOU Cruiser Triple 11MP Outdoor Wi-Fi Security Camera - 5MP+3MP+3MP Triple Lens, 360° Coverage, Color Night Vision, Auto Tracking, Smart Alarm, Two-Way Audio, IP66",
+    "price": 185,
+    "catetory": "electronics",
+    "images": [
+      "img/product/17.jpg",
+      "img/product/17-1.jpg",
+      "img/product/17-2.jpg",
+      "img/product/17-3.jpg"
+    ]
+  },
+  {
+    "id": 18,
+    "img": "img/product/18.jpg",
+    "name": "Oneplus 12 Dual-SIM 16GB RAM, 512GB 5G Flowy Emerald - International Version",
+    "price": 225,
+    "catetory": "mobiles",
+    "images": [
+      "img/product/18.jpg",
+      "img/product/18-1.jpg",
+      "img/product/18-2.jpg",
+      "img/product/18-3.jpg"
+    ]
+  },
+  {
+    "id": 19,
+    "img": "img/product/19.jpg",
+    "name": "Arzum Shake'n Take Neo Personal Blender - Black -AR1147",
+    "price": 140,
+    "catetory": "appliances",
+    "images": [
+      "img/product/19.jpg",
+      "img/product/19-1.jpg",
+      "img/product/19-2.jpg",
+      "img/product/19-3.jpg"
+    ]
+  },
+  {
+    "id": 20,
+    "img": "img/product/20.jpg",
+    "name": "LG MH8265DIS Smart Inverter Microwave With Grill - 1200 Watt, 42 Liters, Black-(International warranty), Energy consumption : 1350, Package weight in KGs : 5",
+    "price": 280,
+    "old_price": 330,
+    "catetory": "appliances",
+    "images": [
+      "img/product/20.jpg",
+      "img/product/20-1.jpg",
+      "img/product/20-2.jpg",
+      "img/product/20-3.jpg"
+    ]
+  },
+  {
+    "id": 21,
+    "img": "img/product/21.jpg",
+    "name": "Arzum OKKA Rich Pro Plus (With Water Tank) - OK0038-0400 - Copper, 8 Modes – Turkish coffee, cappuccino & more. Fast or Slow – 80-sec quick, 4-min slow. Touch & LED Alerts – Easy, spill-free. Milk Frother – Hot & cold foam. 1.3L Tank, 700W – More brews, less hassle.",
+    "price": 350,
+    "catetory": "appliances",
+    "images": [
+      "img/product/21.jpg",
+      "img/product/21-1.jpg",
+      "img/product/21-2.jpg",
+      "img/product/21-3.jpg"
+    ]
+  },
+  {
+    "id": 22,
+    "img": "img/product/22.jpg",
+    "name": "PENGUIN - FG330L-2D SMART Top Mount Refrigerator - 303 L -Silver 11 Ft, Automatic defrost in refrigerator compartment, Airflow cooling system, Refrigerator body made of steel anti rust according to the standard specifications",
+    "price": 580,
+    "catetory": "appliances",
+    "images": [
+      "img/product/22.jpg",
+      "img/product/22-1.jpg",
+      "img/product/22-2.jpg",
+      "img/product/22-3.jpg"
+    ]
+  },
+  {
+    "id": 23,
+    "img": "img/product/23.jpg",
+    "name": "Kenwood Glass 1000W Power Blender Blender/Smoothie Maker 2 L With Grinder Mill, Chopper Mill, Ice Crush Function Blm45.720Ss Black/Silver, Powerful motor. 1000w. Optimum performance for effortless blending with 2.0 litre glass goblet (1.6 working capacity)",
+    "price": 400,
+    "catetory": "appliances",
+    "images": [
+      "img/product/23.jpg",
+      "img/product/23-1.jpg",
+      "img/product/23-2.jpg",
+      "img/product/23-3.jpg"
+    ]
+  },
+  {
+    "id": 24,
+    "img": "img/product/24.jpg",
+    "name": "TORNADO 4K Frameless TV 55 Inch Android Built-In Receiver, HDR10, HLG, Dolby Digital Plus,Surround Sound, Voice Search, Google Assistant, Chromecast Built-in - 55UA5300E",
+    "price": 300,
+    "old_price": 380,
+    "catetory": "electronics",
+    "images": [
+      "img/product/24.jpg",
+      "img/product/24-1.jpg",
+      "img/product/24-2.jpg",
+      "img/product/24-3.jpg"
+    ]
+  }
+]

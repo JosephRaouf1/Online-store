@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Icons link from Font Awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <!-- link google font -->
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Saira+Stencil:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- Basic Icons -->
+    <link href="https://cdn.boxicons.com/3.0.8/fonts/basic/boxicons.min.css" rel="stylesheet">
+    <!-- link CSS pages -->
+    <!-- header css -->
+    <link rel="stylesheet" href="css/root.css">
+    <link rel="stylesheet" href="css/header.css">
+    <!-- slider css -->
+    <link rel="stylesheet" href="css/root.css">
+    <link rel="stylesheet" href="css/slider.css">   
+    <!-- boxes css -->
+    <link rel="stylesheet" href="css/root.css">
+    <link rel="stylesheet" href="css/boxes.css">
+    <!-- sale_tag css -->
+    <link rel="stylesheet" href="css/root.css">
+    <link rel="stylesheet" href="css/section-header.css">
+    <!-- sale_product css -->
+    <link rel="stylesheet" href="css/root.css">
+    <link rel="stylesheet" href="css/product-slider.css">
+    <!-- banners css-->
+    <link rel="stylesheet" href="css/root.css">
+    <link rel="stylesheet" href="css/banners.css">
+    <!-- footer css -->
+    <!-- <link rel="stylesheet" href="footer.css"> -->
+    <link rel="stylesheet" href="css/root.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <!-- cart_section -->
+    <link rel="stylesheet" href="css/root.css">
+    <link rel="stylesheet" href="css/cart-section.css">
+    <!-- fav_section -->
+    <link rel="stylesheet" href="css/root.css">
+    <link rel="stylesheet" href="css/favorite-section.css">
+    <!-- product_details_page -->
+    <link rel="stylesheet" href="css/root.css">
+    <link rel="stylesheet" href="css/product-details-page.css">
+    <title>Online Store</title>
+</head>
+<body>  
+    <div class="container">
+        <header>
+            <div class="header_container">
+                <div class="logo">
+                    <i class="fa-brands fa-shopify"></i>
+                    <h1><span>O</span>nline<span>S</span>tore</h1>
+                </div>
+                <div class="head_tabs">
+                    <div class="head_links_container hide">
+                        <div class="menu_header">
+                            <i class="fa-solid fa-bars-staggered hide" id="menu_icon_header"></i>
+                            <h6 class="hide" id="menu_res_text">menu</h6>
+                        </div>
+                        <ul class="head_links">
+                            <li><a href="#deals" class="head_link">deals</a></li>
+                            <li><a href="#electronics" class="head_link">electronics</a></li>
+                            <li><a href="#appliances" class="head_link">appliances</a></li>
+                            <li><a href="#mobiles" class="head_link">mobiles</a></li>
+                            <li><a href="#" class="head_link">contact</a></li>
+                        </ul>
+                    </div>
+                    <form class="search_box search_opacity">
+                        <div class="select_box">
+                            <select name="Categoty" id="Categoty">
+                                <option value="All categories">All categories</option>
+                                <option value="Electronics">Electronics</option>
+                                <option value="Phones">Phones</option>
+                                <option value="Computers">Computers</option>
+                                <option value="Jewelry">Jewelry</option>
+                                <option value="Fashion">Fashion</option>
+                                <option value="Office tools">Office tools</option>
+                                <option value="Toys">Toys</option>
+                            </select>
+                        </div>
+                        <input type="search" placeholder="Search">
+                        <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    </form>
+                    <div class="head_icons">
+                        <i class="fa-solid fa-xmark hide" id="search_close"></i>
+                        <i class="fa-solid fa-magnifying-glass hdn_js" id="search_icon"></i>
+                        <!-- <div class="search_icon_2_box hide">
+                            <i class="fa-solid fa-magnifying-glass hdn_js" id="search_icon_2"></i>
+                        </div> -->
+                        <div class="menu_box_icon hide">
+                            <i class="fa-solid fa-bars-staggered" id="menu_icon"></i>
+                        </div>
+                        <a href="#">
+                            <i class="fa-solid fa-user hdn_js"></i>
+                        </a> 
+                        <div class="fav_icon hdn_js">
+                            <button><i class="fa-regular fa-heart"></i></button>
+                            <span class="fav_counter">0</span>
+                        </div>
+                        <div class="cart_icon hdn_js">
+                            <button><i class="fa-solid fa-cart-shopping"></i></button>
+                            <span class="cart_counter">0</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- <header>
+            <div class="header_container">
+                <div class="logo">
+                    <h1>OnlineStore</h1>
+                </div>
+                <div class="head_tabs">
+                    <div class="head_links_container">
+                        <ul class="head_links">
+                            <li><a href="#" class="head_link active">home</a></li>
+                            <li><a href="#" class="head_link">shop</a></li>
+                            <li><a href="#" class="head_link">categories</a></li>
+                            <li><a href="#deals" class="head_link">deals</a></li>
+                            <li><a href="#" class="head_link">contact</a></li>
+                        </ul>
+                    </div>
+                    <form class="search_box hide">
+                        <div class="select_box">
+                            <select name="Categoty" id="Categoty">
+                                <option value="All categories">All categories</option>
+                                <option value="Electronics">Electronics</option>
+                                <option value="Phones">Phones</option>
+                                <option value="Computers">Computers</option>
+                                <option value="Jewelry">Jewelry</option>
+                                <option value="Fashion">Fashion</option>
+                                <option value="Office tools">Office tools</option>
+                                <option value="Toys">Toys</option>
+                            </select>
+                        </div>
+                        <input type="search" placeholder="Search">
+                        <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    </form>
+                    <div class="head_icons">
+                        <i class="fa-solid fa-xmark hide" id="search_close"></i>
+                        <i class="fa-solid fa-magnifying-glass hdn_js" id="search_icon"></i>
+                        <div class="search_icon_2_box hide">
+                            <i class="fa-solid fa-magnifying-glass hdn_js" id="search_icon_2"></i>
+                        </div>
+                        <div class="menu_box_icon hide">
+                            <i class="fa-solid fa-bars-staggered" id="menu_icon"></i>
+                        </div>
+                        <a href="#"><i class="fa-solid fa-user hdn_js"></i></a> 
+                        <div class="fav_icon hdn_js">
+                            <button><i class="fa-regular fa-heart"></i></button>
+                            <span class="fav_counter">0</span>
+                        </div>
+                        <div class="cart_icon hdn_js">
+                            <button><i class="fa-solid fa-cart-shopping"></i></button>
+                            <span class="cart_counter">0</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header> -->
+
+        <div class="slider">
+            <div class="slider_container">
+                <div class="swiper">
+                    <a href="#"><img src="img/ChatGPT Image Aug 20, 2026, 05_54_21 AM.png" class="slide active" alt="sale"></a>
+                    <a href="#"><img src="img/ChatGPT Image Aug 20, 2026, 05_52_07 AM.png" class="slide" alt="sale"></a>
+                    <a href="#"><img src="img/ChatGPT Image Aug 20, 2026, 05_54_34 AM.png" class="slide" alt="sale"></a>
+                    <div class="pagination"></div>
+                </div>
+                <div class="side_img">
+                    <img src="img/ChatGPT Image Aug 20, 2026, 06_20_59 AM.png" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div class="boxes">
+            <div class="boxes_container">
+                <div class="box">
+                    <img src="img/product/2.avif" alt="imag">
+                    <div class="text_box">
+                        <p class="flash"><i class="fa-solid fa-bolt-lightning"></i> Flash Deal</p>
+                        <h6>Exclusive offers <br> Just for you!</h6>
+                        <div class="discount">
+                            <span>Up <br> To</span>
+                            <span>70%</span>
+                        </div>
+                        <p class="now"><span>shop now</span> <i class="fa-solid fa-arrow-right"></i></p>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="img/banner3_2.png" alt="imag">
+                    <div class="text_box">
+                        <p class="flash"><i class="fa-solid fa-bolt-lightning"></i> Flash Deal</p>
+                        <h6>Exclusive offers <br> Just for you!</h6>
+                        <div class="discount">
+                            <span>Up <br> To</span>
+                            <span>70%</span>
+                        </div>
+                        <p class="now"><span>shop now</span> <i class="fa-solid fa-arrow-right"></i></p>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="img/product/6.webp" alt="imag">
+                    <div class="text_box">
+                        <p class="flash"><i class="fa-solid fa-bolt-lightning"></i> Flash Deal</p>
+                        <h6>Exclusive offers <br> Just for you!</h6>
+                        <div class="discount">
+                            <span>Up <br> To</span>
+                            <span>70%</span>
+                        </div>
+                        <p class="now"><span>shop now</span> <i class="fa-solid fa-arrow-right"></i></p>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="img/banner3_4.png" alt="imag">
+                    <div class="text_box">
+                        <p class="flash"><i class="fa-solid fa-bolt-lightning"></i> Flash Deal</p>
+                        <h6>Exclusive offers <br> Just for you!</h6>
+                        <div class="discount">
+                            <span>Up <br> To</span>
+                            <span>70%</span>
+                        </div>
+                        <p class="now"><span>shop now</span> <i class="fa-solid fa-arrow-right"></i></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section_header sale_header">
+            <div class="section_header_container">
+                <div class="line"></div>
+                <div class="section_title">
+                    <i class="fa-solid fa-tags"></i>
+                    <h6>flash sale</h6>
+                </div>
+                <div class="line"></div>
+                <!-- <div class="btn_box">
+                    <button class="brevios_btn"><i class="fa-solid fa-angle-left"></i></button>
+                    <button class="next_btn"><i class="fa-solid fa-angle-right"></i></button>
+                </div>  -->
+            </div>
+        </div>
+
+        <div class="list_container">
+            <button class="brevios_btn"><i class="fa-solid fa-angle-left"></i></button>
+            <div class="products_slider sale_producst" id="deals">
+                <!-- <div data-id="" data-name="" class="card sale_card">
+                    <button class="open_details_page">
+
+                    </button>
+                    <p class="sale_box">
+                        20%
+                    </p>
+                    <div class="image">
+                        <img src="img/product/16.png" alt="">
+                    </div>
+                    <a class="description">
+                        samrt phone
+                    </a>
+                    <div class="price">
+                        <p class="real_price">$320</p>
+                        <small><del>$450</del></small>
+                    </div>
+                    <div class="btn_box"> 
+                        <button class="add_to_fav">
+                            <i class="fa-regular fa-heart"></i>
+                        </button>
+                        <button class="add_to_cart">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            <p>Add to Cart</p>
+                        </button>
+                    </div>
+                </div> -->
+            </div>
+            <button class="next_btn"><i class="fa-solid fa-angle-right"></i></button>
+        </div>
+
+        <div class="banners_after_sale">
+            <div class="banners">
+                <a href="#"><img src="img/headphone.png" alt=""></a>
+                <a href="#"><img src="img/shose.png" alt=""></a>
+                <a href="#"><img src="img/perfum.png" alt=""></a>
+            </div>
+        </div>
+
+        <div class="section_header electronics_header">
+            <div class="section_header_container">
+                <div class="line"></div>
+                <div class="section_title">
+                    <i class="fa-solid fa-microchip"></i>
+                    <h6>Electronics</h6>
+                </div>
+                <div class="line"></div>
+                <!-- <div class="btn_box">
+                    <button class="brevios_btn"><i class="fa-solid fa-angle-left"></i></button>
+                    <button class="next_btn"><i class="fa-solid fa-angle-right"></i></button>
+                </div>  -->
+            </div>
+        </div>
+
+        <div class="list_container">
+            <button class="brevios_btn"><i class="fa-solid fa-angle-left"></i></button>
+            <div class="products_slider electronics_products" id="electronics">
+                <!-- <div class="card electronic_card">
+                    <p class="sale_box">
+                        20%
+                    </p>
+                    <div class="image">
+                        <img src="img/product/16.png" alt="">
+                    </div>
+                    <a class="description">
+                        samrt phone
+                    </a>
+                    <div class="price">
+                        <p class="real_price">$320</p>
+                        <small><del>$450</del></small>
+                    </div>
+                    <div class="btn_box"> 
+                        <button class="add_to_fav">
+                            <i class="fa-regular fa-heart"></i>
+                        </button>
+                        <button class="add_to_cart">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            <p>Add to Cart</p>
+                        </button>
+                    </div>
+                </div> -->
+            </div>
+            <button class="next_btn"><i class="fa-solid fa-angle-right"></i></button>
+        </div>
+
+        <div class="section_header appliances_header">
+            <div class="section_header_container">
+                <div class="line"></div>
+                <div class="section_title">
+                    <i class="fa-solid fa-blender"></i>
+                    <h6>appliances</h6>
+                </div>
+                <div class="line"></div>
+                <!-- <div class="btn_box">
+                    <button class="brevios_btn"><i class="fa-solid fa-angle-left"></i></button>
+                    <button class="next_btn"><i class="fa-solid fa-angle-right"></i></button>
+                </div>  -->
+            </div>
+        </div>
+
+        <div class="list_container">
+            <button class="brevios_btn"><i class="fa-solid fa-angle-left"></i></button>
+            <div class="products_slider appliances_products" id="appliances">
+                <!-- <div class="card electronic_card">
+                    <p class="sale_box">
+                        20%
+                    </p>
+                    <div class="image">
+                        <img src="img/product/16.png" alt="">
+                    </div>
+                    <a class="description">
+                        samrt phone
+                    </a>
+                    <div class="price">
+                        <p class="real_price">$320</p>
+                        <small><del>$450</del></small>
+                    </div>
+                    <div class="btn_box"> 
+                        <button class="add_to_fav">
+                            <i class="fa-regular fa-heart"></i>
+                        </button>
+                        <button class="add_to_cart">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            <p>Add to Cart</p>
+                        </button>
+                    </div>
+                </div> -->
+            </div>
+            <button class="next_btn"><i class="fa-solid fa-angle-right"></i></button>
+        </div>
+
+        <div class="two_banner">
+            <div class="container">
+                <img src="img/banner_box4.jpg" alt="#">
+                <img src="img/banner_box5.jpg" alt="#">
+            </div>
+        </div>
+
+        <div class="section_header mobiles_header">
+            <div class="section_header_container">
+                <div class="line"></div>
+                <div class="section_title">
+                    <i class="fa-solid fa-mobile-screen-button"></i>
+                    <h6>mobiles</h6>
+                </div>
+                <div class="line"></div>
+                <!-- <div class="btn_box">
+                    <button class="brevios_btn"><i class="fa-solid fa-angle-left"></i></button>
+                    <button class="next_btn"><i class="fa-solid fa-angle-right"></i></button>
+                </div>  -->
+            </div>
+        </div>
+
+        <div class="list_container">
+            <button class="brevios_btn"><i class="fa-solid fa-angle-left"></i></button>
+            <div class="products_slider mobiles_products" id="mobiles">
+                <!-- <div class="card electronic_card">
+                    <p class="sale_box">
+                        20%
+                    </p>
+                    <div class="image">
+                        <img src="img/product/16.png" alt="">
+                    </div>
+                    <a class="description">
+                        samrt phone
+                    </a>
+                    <div class="price">
+                        <p class="real_price">$320</p>
+                        <small><del>$450</del></small>
+                    </div>
+                    <div class="btn_box"> 
+                        <button class="add_to_fav">
+                            <i class="fa-regular fa-heart"></i>
+                        </button>
+                        <button class="add_to_cart">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            <p>Add to Cart</p>
+                        </button>
+                    </div>
+                </div> -->
+            </div>
+            <button class="next_btn"><i class="fa-solid fa-angle-right"></i></button>
+        </div>
+
+        <div class="cart_section close_cart">
+            <div class="container">
+                <div class="header">
+                    <div class="header_icon">
+                        <i class="fa-solid fa-cart-arrow-down"></i>
+                        <div class="header_title">
+                            <p>item in cart :</p>
+                            <p class="cart_qty">0</p>
+                        </div>
+                    </div>
+                    <i class="fa-solid fa-xmark close_cart_mark"></i>
+                </div>
+                <div class="cart_page">
+                    <!-- <div class="cart_item">
+                        <div class="frist">
+                            <div class="image">
+                                <img src="img/product/20.png" alt="">
+                            </div>
+                            <div class="text_box">
+                                <p class="title">Lorem ipsum dolor sit amet.</p>
+                                <p class="price">$280</p>
+                                <div class="qty_control">
+                                    <i class="fa-solid fa-minus"></i>
+                                    <p class="qty">33</p>
+                                    <i class="fa-solid fa-plus"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="delete">
+                            <i class="fa-solid fa-trash-can delete_icon"></i>
+                        </div>
+                    </div> -->
+                </div>
+                <div class="cart_footer">
+                    <div class="total">
+                        <p>suptotal :</p>
+                        <p class="total_price">$0</p>
+                    </div>
+                    <div class="btns">
+                        <button>checkout</button>
+                        <button>shop more</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="fav_section close_fav">
+            <div class="container">
+                <div class="header">
+                    <div class="header_icon">
+                        <i class="fa-solid fa-cart-arrow-down"></i>
+                        <div class="header_title">
+                            <p>Favorite Items :</p>
+                            <p class="fav_qty">0</p>
+                        </div>
+                    </div>
+                    <i class="fa-solid fa-xmark close_fav_mark"></i>
+                </div> 
+                <div class="fav_page">
+                    <!-- <div class="fav_item">
+                        <div class="frist">
+                            <div class="image">
+                                <img src="img/product/20.png" alt="">
+                            </div>
+                            <div class="text_box">
+                                <p class="title">Lorem ipsum dolor sit amet.</p>
+                                <p class="price">$280</p>
+                            </div>
+                        </div>
+                        <div class="delete">
+                            <i class="fa-solid fa-trash-can delete_icon"></i>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+        
+        <div class="product_details_page details_hide">
+            <div class="det_container">
+                <button class="close_btn">
+                    <i class="fa-solid fa-xmark close_details_page"></i>
+                </button>
+                <div class="slider_sec">
+                    <div class="side_pug">
+                        <div><img class="pic" src="" alt="image"></div>
+                        <div><img class="pic" src="" alt="image"></div>
+                        <div><img class="pic" src="" alt="image"></div>
+                        <div><img class="pic" src="" alt="image"></div>
+                    </div>
+                    <div class="main_photo">
+                        <!-- <img class="active_pic" src="img/product/10.png" alt="image"> -->
+                    </div>
+                </div>
+                <div class="product_description">
+                    <p class="det_name"></p>
+                    <p class="availability">Availability : <span>in stock</span></p>
+                    <p class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </p>
+                    <div class="det_price_box">
+                        <p class="det_price"></p>
+                        <small><del class="det_old_price"></del></small>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+        <div class="container">
+            <div class="first_row">
+                <div class="first_container">
+                    <div class="first_feturs">
+                        <div class="feturs shipping">
+                            <div class="icon">
+                                <i class="fa-regular fa-truck"></i>
+                            </div>
+                            <div class="text">
+                                <p>free shipping</p>
+                                <p class="below">On orders over $50</p>
+                            </div>
+                        </div>
+                        <div class="feturs returns">
+                            <div class="icon">
+                                <i class="bxf bx-rotate-ccw-30"></i>
+                            </div>
+                            <div class="text">
+                                <p>easy returns</p>
+                                <p class="below">30-day return policy</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="second_feturs">
+                        <div class="feturs support">
+                            <div class="icon">
+                                <i class="bxf bx-headphone-mic"></i>
+                            </div>
+                            <div class="text">
+                                <p>24/7 support</p>
+                                <p class="below">We're here to help</p>
+                            </div>
+                        </div>
+                        <div class="feturs secure">
+                            <div class="icon">
+                                <i class="bxf bx-check-shield"></i>
+                            </div>
+                            <div class="text">
+                                <p>secure payment</p>
+                                <p class="below">100% secure checkout</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="second_row">
+                <div class="second_container">
+                    <div class="top">
+                        <div class="blog">
+                            <div class="foot_logo">
+                                <!-- <img src="img/icon.png" alt=""> -->
+                                <i class="fa-brands fa-shopify"></i>
+                                <h2>Online<span>Store</span></h2>
+                            </div>
+                            <p>Everything you need in one place.</p>
+                            <div class="icons">
+                                <i class="fa-brands fa-facebook-f"></i>
+                                <i class="fa-brands fa-instagram"></i>
+                                <i class="fa-brands fa-x-twitter"></i>
+                                <i class="fa-brands fa-youtube"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bottom">
+                        <div class="minue">
+                            <div class="links shop">
+                                <p class="minue_head">shop</p>
+                                <a href="#"><i class="fa-solid fa-caret-right"></i> all products</a>
+                                <a href="#"><i class="fa-solid fa-caret-right"></i> deals</a>
+                                <a href="#"><i class="fa-solid fa-caret-right"></i> new arrivals</a>
+                                <a href="#"><i class="fa-solid fa-caret-right"></i> best sellers</a>
+                                <a href="#"><i class="fa-solid fa-caret-right"></i> categories</a>
+                            </div>
+                            <div class="links customer_service">
+                                <p class="minue_head">customer service</p>
+                                <a href="#"><i class="fa-solid fa-caret-right"></i> contact us</a>
+                                <a href="#"><i class="fa-solid fa-caret-right"></i> shipping & delivery</a>
+                                <a href="#"><i class="fa-solid fa-caret-right"></i> returns & exchanges</a>
+                                <a href="#"><i class="fa-solid fa-caret-right"></i> FAQ</a>
+                                <a href="#"><i class="fa-solid fa-caret-right"></i> track your order</a>
+                            </div>
+                            <div class="links about_us">
+                                <p class="minue_head">about us</p>
+                                <a href="#"><i class="fa-solid fa-caret-right"></i> our story</a>
+                                <a href="#"><i class="fa-solid fa-caret-right"></i> careers</a>
+                                <a href="#"><i class="fa-solid fa-caret-right"></i> privacy policy</a>
+                                <a href="#"><i class="fa-solid fa-caret-right"></i> terms & conditions</a>
+                                <a href="#"><i class="fa-solid fa-caret-right"></i> blog</a>
+                            </div>
+                        </div>
+                        <div class="payments">
+                            <p class="loop">stay in the loop</p>
+                            <p class="loop_dis">Get updates on new products and exclucive offers.</p>
+                            <form class="input_box">
+                                <input id="sub" type="email" placeholder="Enter your email" required>
+                                <button id="sub" type="submit">
+                                    <i class="bxf bx-paper-plane"></i>
+                                </button>
+                            </form>
+                            <!-- <p>payment methods</p>
+                            <div class="methods">
+                                <i class="fa-brands fa-cc-visa visa"></i>
+                                <img class="master_card" src="master card.png" alt="image">
+                                <i class="fa-brands fa-paypal paypal"></i>
+                                <i class="fa-brands fa-apple-pay apple_pay"></i>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="last_footer">
+                <div></div>
+                <p>© 2026 <span>OnlineStore.</span> All Rights Reserved.</p>
+                <div></div>
+            </div>
+        </div>
+        </footer>
+
+        <!-- <footer>
+            <div class="footer_container">
+                <div class="big_row">
+                    <div class="footer_logo">
+                        <img src="img/icon.png" alt="">
+                        <div class="footer_logo_txt">
+                            <a href="#">OnlineStore</a>
+                        </div>
+                    </div>
+                    <p>Lorem ipsum dolor sit consectetur adipisicing elit. Odit, aspernatur.</p>
+                    <div class="footer_icon">
+                        <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="links">
+                        <h4>find it fast</h4>
+                        <a href="#"><i class="fa-solid fa-caret-right"></i> Laptops & Computers</a>
+                        <a href="#"><i class="fa-solid fa-caret-right"></i> Smart Phones & Tablets</a>
+                        <a href="#"><i class="fa-solid fa-caret-right"></i> TV & Audio</a>
+                        <a href="#"><i class="fa-solid fa-caret-right"></i> Appliances</a>
+                        <a href="#"><i class="fa-solid fa-caret-right"></i> Jewelry & Watches</a>
+                    </div>
+                    <div class="links">
+                        <h4>quick linkes</h4>
+                        <a href="#"><i class="fa-solid fa-caret-right"></i> Your Account</a>
+                        <a href="#"><i class="fa-solid fa-caret-right"></i> Returns & Exchanges</a>
+                        <a href="#"><i class="fa-solid fa-caret-right"></i> Shipping & Delivery</a>
+                        <a href="#"><i class="fa-solid fa-caret-right"></i> Estimated Dlivery Time</a>
+                        <a href="#"><i class="fa-solid fa-caret-right"></i> Purchase History</a>
+                    </div>
+                    <div class="links">
+                        <h4>service us</h4>
+                        <a href="#"><i class="fa-solid fa-caret-right"></i> Support Center</a>
+                        <a href="#"><i class="fa-solid fa-caret-right"></i> Term &Conditions</a>
+                        <a href="#"><i class="fa-solid fa-caret-right"></i> Privacy &Policy</a>
+                        <a href="#"><i class="fa-solid fa-caret-right"></i> Help</a>
+                        <a href="#"><i class="fa-solid fa-caret-right"></i> FAQS</a>
+                    </div>
+                </div>
+            </div>
+            <div class="last_footer">
+                <div class="last_footer_container">
+                    <p>© 2026 <span>OnlineStore.</span> All Rights Reserved.</p>
+                    <img src="img/payment_method.png" alt="">
+                </div>
+            </div>
+        </footer> -->
+
+    </div>
+    <!-- link JavaScript pages -->
+    <script src="js/header.js"></script>
+    <script src="js/sliders.js"></script>
+    <script type="module" src="js/e-commerce-api.js"></script>
+    <script type="module" src="js/main.js"></script>
+</body>
+</html>
