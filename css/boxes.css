@@ -15,7 +15,7 @@ body{
 }
 .boxes_container .box{
     padding: 0 10px;
-    background: url(img/bg_banner3.jpg);
+    background: url(../img/bg_banner3.jpg);
     background-size: cover;
     display: flex;
     align-items: center;

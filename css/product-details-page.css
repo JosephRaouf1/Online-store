@@ -9,6 +9,11 @@
     transform: translateY(-50%);
     transition: 0.3s;
 }
+@media screen and (max-width: 492px){
+    .product_details_page{
+        top: 55%;
+    }
+}
 .details_hide{
     opacity: 0;
     transform: translate(-200%);
@@ -26,9 +31,9 @@
     gap: 10px;
 }
 .product_details_page .det_container .close_btn{
-    position: absolute;
+    position: fixed;
     top: 10px;
-    right: 10px;
+    right: 20px;
     box-sizing: border-box;
     padding: 5px 5px;
     font-size: 16px;
@@ -116,4 +121,68 @@
 .product_details_page .det_container .product_description small {
     color: black;
     font-size: 16px;
+}
+
+
+@media screen and (max-width: 1170px){
+    .product_details_page .det_container{
+        flex-direction: column;
+        justify-content: flex-start;
+        overflow-y: auto;
+        overscroll-behavior: contain;
+        width: 100%;
+    }
+    .product_details_page .det_container .slider_sec{
+        flex-direction: column-reverse;
+        width: 100%;
+        gap: 0;
+        border-bottom: 1px solid var(--border_colore);
+    }
+    .det_container .slider_sec .side_pug{
+        display: flex;
+        border: none;
+        gap: 10px;
+        padding: 0;
+    }
+    .product_details_page .det_container .side_pug div{
+        border-bottom: none;
+        border-right: 1px solid var(--border_colore);
+        padding: 5px 10px;
+    }
+    .product_details_page .det_container .side_pug div:first-child{
+        border-left: 1px solid var(--border_colore);
+    }
+    .product_details_page .det_container .main_photo{
+        border-right: none;
+        padding-right: 0;
+        padding-bottom: 10px;
+        height: 300px;
+        border-bottom: 1px solid var(--border_colore);
+    }
+    .product_details_page .det_container .product_description{
+        width: 90%;
+        padding-left: 0;
+    }
+}
+@media screen and (max-width: 676px){
+    .product_details_page .det_container .side_pug div{
+        width: calc(100% / 4);
+        height: 80px;
+    }
+    .product_details_page .det_container .side_pug div:first-child{
+        border-left: none;
+    }
+    .product_details_page .det_container .side_pug div:last-child{
+        border-right: none;
+    }
+    .product_details_page .det_container .main_photo{
+        height: 250px;
+    }
+    .product_details_page .det_container .product_description{
+        width: 100%;
+    }
+    .product_details_page .det_container .product_description .det_name{
+        width: 100%;
+        font-size: 14px;
+    }
 }

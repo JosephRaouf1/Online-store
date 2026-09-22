@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    /* outline: 1px solid black; */
 }
 body{
     font-family: "DM Sans", sans-serif;
@@ -33,19 +34,21 @@ header{
     margin: auto;
     display: flex;
     align-items: center;
+    justify-content: space-between;
     gap: 5px;
-    flex-wrap: wrap;
     padding: 10px 0px;
     z-index: 10;
+    position: relative;
+    /* background-color: gray; */
 }
 
 /*--------------------------------------------------------------------------logo------------------------------------------------------------- */
 .logo{
     letter-spacing: 2px;
-    flex: 0.3;
     display: flex;
     align-items: center;
     gap: 5px;
+    /* background-color: aqua; */
 }
 .logo i{
     color: var(--main_color);
@@ -56,78 +59,68 @@ header{
     font-family: "Saira Stencil";
 }
 .logo span{
-    color: var(--main_color);
     font-family: "Saira Stencil";
-}
-
-/*--------------------------------------------------------------------------head tabs---------------------------------------------------------*/
-.header_container .head_tabs{
-    display: flex;
-    align-items: center;
-    gap: 5px;
-    flex: 1;
-    flex-wrap: wrap;
-    position: relative;
-    height: 50px;
+    color: var(--main_color);
 }
 
 /* ------------- links --------------- */
 
-.head_tabs .head_links_container{
+.container .head_links_container{
     display: flex;
     align-items: center;
     justify-content: center;
-    flex: 1;
 }
-.head_tabs .head_links{
+.container .head_links{
     list-style: none;
     display: flex;
     align-items: center;
     gap: 10px;
+    /* background-color: lightcoral; */
 }
-.head_tabs .head_links li a{
+.container .head_links li a{
     text-decoration: none;
     text-transform: capitalize;
     font-size: 18px;
-    font-weight: 700;
+    font-weight: 500;
     padding: 2.5px 10px;
     color: var(--color_heading);
     transition: 0.3s;
+    /* background-color: red; */
 }
-.head_tabs .head_links li:first-child a{
+.container .head_links li:first-child a{
     color: var(--main_color);
 }
 
 /* --------------- icons --------------- */
 
-.head_tabs .head_icons{
+.container .head_icons{
     display: flex;
     align-items: center;
     justify-content: space-around;
-    gap: 5px;
-    flex: 0.3;
+    gap: 15px;
+    /* background-color: lawngreen; */
 }
-.head_tabs .head_icons i{
+.container .head_icons i{
     color: var(--color_heading);
     font-size: 22px;
     cursor: pointer;
 }
-.head_tabs .head_icons i:hover{
+.container .head_icons i:hover{
     color: var(--main_color);
     scale: 1.1;
 }
-.head_tabs .head_icons .fav_icon,
-.head_tabs .head_icons .cart_icon{
+.container .head_icons .fav_icon,
+.container .head_icons .cart_icon{
     position: relative;
 }
-.head_tabs .head_icons .fav_icon button,
-.head_tabs .head_icons .cart_icon button{
+.container .head_icons .fav_icon button,
+.container .head_icons .cart_icon button{
     outline: none;
     border: none;
     background-color: transparent;
 }
-.head_tabs .head_icons .fav_icon span,
-.head_tabs .head_icons .cart_icon span{
+.container .head_icons .fav_icon span,
+.container .head_icons .cart_icon span{
     position: absolute;
     background-color: var(--sale_color);
     color: var(--white_color);
@@ -149,11 +142,11 @@ header{
 .search_box{
     position: absolute;
     bottom: -50px;
-    right: -30px;
+    right: 10px;
     display: flex;
     align-items: center;
     height: 30px;
-    background-color: var(--white_color);
+    /* background-color: aqua; */
     border: 1px solid var(--p_color);
     transition: 0.3s;
 }
@@ -208,26 +201,31 @@ header .head_links_container.show{
 /* -------------------------------------------- */
 
 @media screen and (max-width: 1170px){
-    .header_container{
-        flex-direction: column;
+    .logo{
+        font-size: 14px;
     }
-    .head_tabs{
-        width: 100%;
+    .logo i{
+        font-size: 30px;
+        transform: translateY(0);
+    }
+    .header_container{
+        width: 90%;
     }
     .head_links_container.hide{
         display: none;
     }
-    .container .header_container .head_tabs .head_links_container{
+    .container .header_container .head_links_container{
+        /* display: none; */
         position: absolute;
-        top: 34px;
+        top: 64px;
         left: 0px;
         background-color: var(--white_color);
         padding: 40px 0 20px 0;
         width: 100%;
-        align-items: self-start;
-        border: 1px solid rgb(223, 223, 223);
+        border: 1px solid var(--border_color);
+        overflow: hidden;
     }
-    .head_tabs .head_links_container .menu_header{
+    .container .head_links_container .menu_header{
         position: absolute;
         top: 10px;
         left: 10%;
@@ -235,44 +233,62 @@ header .head_links_container.show{
         align-items: center;
         gap: 5px;
     }
-    .head_tabs .head_links_container .menu_header i{
+    .container .head_links_container .menu_header i{
         font-size: 20px;
-        color: var(--main_color);
     }
-    .head_tabs .head_links_container .menu_header h6{
+    .container .head_links_container .menu_header h6{
         text-transform: capitalize;
         font-size: 18px;
-        color: var(--main_color);
     }
-    .head_tabs .head_links{
+    .container .head_links{
         flex-direction: column;
         width: 100%;
+        /* background-color: yellow; */
     }
-    .head_tabs .head_links li{
+    .container .head_links li{
+        /* background-color: red; */
         width: 100%;
         display: flex;
         align-items: center;
         justify-content: center;
-        transition: 0.3s;
     }
-    .head_tabs .head_links li a{
+    .container .head_links li a{
+        /* background-color: blue; */
         width: 100%;
         text-align: center;
         padding: 10px 0;
     }
-    .head_tabs .head_links li:first-child a{
+    .container .head_links li:first-child a{
         color: var(--color_heading);
     }
-    .head_tabs .head_links li:hover{
+    .container .head_links li a:hover{
         background-color: var(--border_colore);
-    }
-    .head_tabs .head_links li a:hover{
         scale: 1.1;
     }
-    .head_tabs .head_icons{
-        flex: 1;
-    }
-    .head_tabs .head_icons .menu_box_icon{
+    .container .head_icons .menu_box_icon{
         display: block;
+    }
+}
+@media screen and (max-width: 492px){
+    .logo{
+        font-size: 12px;
+    }
+    .logo i{
+        font-size: 28px;
+        transform: translateY(0);
+    }
+    .container .head_icons i{
+        font-size: 18px;
+    }
+    .header_container{
+        width: 90%;
+        flex-direction: column;
+    }
+    .container .head_icons{
+        width: 100%;
+    }
+    .container .header_container .head_links_container{
+        top: 84px;
+        overflow: hidden;
     }
 }
