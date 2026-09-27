@@ -77,18 +77,22 @@ header{
     gap: 10px;
     /* background-color: lightcoral; */
 }
+.container .head_links li{
+    padding: 2.5px 10px;
+
+}
 .container .head_links li a{
     text-decoration: none;
     text-transform: capitalize;
     font-size: 18px;
     font-weight: 500;
-    padding: 2.5px 10px;
     color: var(--color_heading);
     transition: 0.3s;
     /* background-color: red; */
 }
-.container .head_links li:first-child a{
+.container .head_links li a.active{
     color: var(--main_color);
+    border-bottom: 2px solid var(--main_color);
 }
 
 /* --------------- icons --------------- */

@@ -5,6 +5,7 @@
     width: 80%;
     margin: auto;
     position: relative;
+    scroll-margin-top: 140px;
 }
 .list_container .brevios_btn{
     position: absolute;
@@ -36,7 +37,6 @@
     overflow-x: auto;
     scrollbar-width: none;
     scroll-behavior: smooth;
-    scroll-margin-top: 160px;
 }
 .products_slider.electronics_products{
     margin-bottom: 0;
@@ -93,7 +93,9 @@
     justify-content: center;
     overflow: hidden;
     position: relative;
-    border-bottom: 1px solid var(--border_colore);
+    background: url(../img/bg_banner3.jpg);
+    background-size: cover;
+    /* border-bottom: 1px solid var(--border_colore); */
 }
 .products_slider .card .image img{
     max-width: 90%;

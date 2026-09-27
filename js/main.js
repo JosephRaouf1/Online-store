@@ -318,3 +318,30 @@ document.addEventListener("click", (e) => {
         });
     });
 });
+
+const sections = document.querySelectorAll("section");
+const menuElement = document.querySelectorAll(".head_link");
+
+window.addEventListener("scroll", () => {
+
+    sections.forEach(section => {
+
+        if (!section.id) return;
+
+        const top = section.offsetTop -250;
+        const height = section.offsetHeight;
+
+        if (scrollY >= top && scrollY < top + height) {
+
+            const activeLink = document.querySelector(`.head_links li a[href="#${section.id}"]`);
+            if (!activeLink) return;
+
+            menuElement.forEach(link => {
+                link.classList.remove("active");
+            });
+
+            activeLink.classList.add("active");
+        }
+    });
+
+});

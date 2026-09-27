@@ -1,37 +1,21 @@
-// ------------------------------ hero slider -----------------------------
+// ------------------------------ home slider -----------------------------
 
-let pagination = document.querySelector(".pagination");
-let slides = document.querySelectorAll(".slide");
-let counter = 0;
-for(i = 0 ; i < slides.length ; i++){
-    let pagi = document.createElement("div");
-    pagi.classList.add("pagi");
-    pagination.appendChild(pagi);
-};
-pagination.firstElementChild.classList.add("active")
-function swiper(){
-    slides[counter].classList.remove("active");
-    pagination.children[counter].classList.remove("active")
-    counter++;
-    if(counter === slides.length){
-        counter = 0;
-    };
-    slides[counter].classList.add("active");
-    pagination.children[counter].classList.add("active")
-};
-let slider = setInterval(swiper, 2500);
-let pagiBtn = document.querySelectorAll(".pagi");
-pagiBtn.forEach((btn, index) => {
-    btn.addEventListener("click", () =>{
-        clearInterval(slider);
-        pagiBtn.forEach(pagi => pagi.classList.remove("active"));
-        btn.classList.add("active");
-        slides.forEach(slide => slide.classList.remove("active"));
-        slides[index].classList.add("active");
-        counter = index;
-        slider = setInterval(swiper, 2500);
-    })
-});
+const home = document.querySelector(".home_container");
+const images = [
+    "img/hero_light.png",
+    "img/hero1_light.png"
+];
+let currentImage = 0;
+
+setInterval(() => {
+    home.style.backgroundImage = `url("${images[currentImage]}")`;
+
+    currentImage++;
+
+    if (currentImage === images.length) {
+        currentImage = 0;
+    }
+}, 3000);
 
 // ------------------------------ products slider ------------------------
 
