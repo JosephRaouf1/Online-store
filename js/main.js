@@ -287,7 +287,6 @@ document.addEventListener("click", (e) => {
 
 const detailsPic = document.querySelectorAll(".pic");
 const mainPhoto = document.querySelector(".main_photo");
-const detContainer = document.querySelector(".det_container");
 const detName = document.querySelector(".det_name");
 const detPrice = document.querySelector(".det_price");
 const detOldPrice = document.querySelector(".det_old_price");
@@ -306,12 +305,12 @@ document.addEventListener("click", (e) => {
     detPrice.textContent = "$" + product.dataset.price;
     detOldPrice.textContent = "$" + product.dataset.oldprice;
     if(product.dataset.oldprice === "undefined"){
-        detOldPrice.textContent = ""
-    }
+        detOldPrice.textContent = "";
+    };
     const activePic = mainPhoto.querySelector("img");
-    for(i = 0 ; i < moreImgs.length ; i++){
-        detailsPic[i].src = moreImgs[i]
-    }
+    for(let i = 0 ; i < moreImgs.length ; i++){
+        detailsPic[i].src = moreImgs[i];
+    };
     detailsPic.forEach( picture => {
         picture.addEventListener("click", () => {
             activePic.setAttribute("src", picture.getAttribute("src"));
